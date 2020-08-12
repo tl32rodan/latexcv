@@ -38,7 +38,7 @@
 %we use article class because we want to fully customize the page
 \documentclass[10pt,A4]{article}	
 
-
+\usepackage{CJKutf8}
 %----------------------------------------------------------------------------------------
 %	ENCODING
 %----------------------------------------------------------------------------------------
@@ -330,22 +330,23 @@
 \mystrut
 \vspace{-12pt}
 
+ \begin{CJK}{UTF8}{bkai}
 \begin{tabular*}{1\textwidth}{ c c c}
 	\parbox[c]{0.4\linewidth}{
-		\colorbox{thirdcol}{\HUGE{\textcolor{titletext}{\textbf{\uppercase{Jan Küster}}} }}\\
-		\Large{\textcolor{thirdcol}{\textsc{ Consultant Developer}}}\\
+		\colorbox{thirdcol}{\Huge{\textcolor{titletext}{\textbf{\uppercase{陳鵬宇}}} }}\\
+		\LARGE{\textcolor{thirdcol}{\textsc{Peng-Yu Chen}}}\\
 	}&
-	\parbox{0.25\textwidth}{
-	\icontext{MapMarker}{12}{Bremen, Germany}\\
-	\icontext{MobilePhone}{12}{+49 176 *** *** **}\\
-	\icontext{Send}{12}{info@jankuester.com}\\
+	\parbox{0.28\textwidth}{
+	\icontext{MapMarker}{12}{Taichung, Taiwan}\\
+	\icontext{MobilePhone}{12}{+886 979 266 921}\\
+	\icontext{Envelope}{12}{tl32rodan.cs09g@nctu.edu.tw}\
 	}&
 	\parbox{0.3\textwidth}{
-	\icontext{MousePointer}{12}{www.jankuester.com}\\
-	\icontext{Github}{12}{github.com/jankapunkt}\\
-	\icontext{Twitter}{12}{@Kuester\_Jan}\\
+	\icontext{Github}{12}{github.com/tl32rodan}\\
+	\icontext{Facebook}{12}{facebook.com/brian.chen.522}\\
 	}
 \end{tabular*}
+\end{CJK}
 
 % manage space by reducing font size
 \small
@@ -360,15 +361,15 @@
 %----------------------------------------------------------------------------------------
 
 	\mbox{
-		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{I am a digital media graduate with working experience in research projects as well as in the private sector.}
+		\parbox[c][3cm][c]{0.3\textwidth}{
+		\textcolor{textcol}{I'm a computer science graduate, currently going to become a master student, and diving into deep learning world}
 		}
 		\hspace{10pt}
 		\parbox[c][3cm][c]{0.32\textwidth}{
 			\begin{center}
-			\factbubble{\huge{\textcolor{sectcol}{\textbf{M.Sc.}}}\\\small{\textcolor{sectcol}{\textbf{Digital Media}}}}{1}{maincol}{sectcol}{thirdcol}\\
+			\factbubble{\huge{\textcolor{sectcol}{\textbf{B.S.}}}\\\small{\textcolor{sectcol}{\textbf{Compute Science}}}}{1}{maincol}{sectcol}{thirdcol}\\
 			\textcolor{textcol}{as latest degree from}\\
-			\textcolor{textcol}{\textbf{University of Bremen}}
+			\textcolor{textcol}{\textbf{National Sun Yer-Sen University}}
 			\end{center}
 		}
 		\hspace{10pt}
@@ -387,19 +388,19 @@
 		
 		% TEXT BOX
 		\parbox[b][150pt][c]{0.35\textwidth}{
-			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
+			\textcolor{textcol}{The biggest part I contribute to my previous project is model training.}\\
 		
 			% LANGUAGES
-			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{Language}{12}{\colorbox{maincol}{German (native)}}\\
-			\icontext{Language}{12}{\colorbox{maincol}{English (c1)}}\\
+			\cvsect{English Skill Verification}{0.49}{thirdcol}{textcol}\\[4pt]
+			\icontext{Language}{12}{\colorbox{maincol}{TOEIC L\&R : 900}}\\
+			\icontext{Language}{12}{\colorbox{maincol}{GSAT English : 14}}\\
 		}
 
 		% PIE CHART	
 		\begin{piechart}{360}{2}{bgcol}{textcol}{sectcol}
-			\slice{6}{Design}{thirdcol}
-			\slice{16}{Consulting}{fourthcol}
-			\slice{16}{Research}{fifthcol}
+			\slice{6}{Creativitiy}{thirdcol}
+			\slice{16}{Positivity}{fourthcol}
+			\slice{16}{Paper Research}{fifthcol}
 			\slice{16}{Projects}{secondcol}
 			\slice{46}{Development}{maincol}
 		\end{piechart}\\
@@ -413,51 +414,44 @@
 	% BAR CHART
 	\mbox{\hspace{-14pt}
 		\begin{barchart}{10}{5.5}{sectcol}{textcol}{sectcol}{maincol}{secondcol}{thirdcol}
-			\baritem{50}{Bootstrap}{0}{0}{65}
-			\baritem{80}{Javascript}{100}{0}{0}
-			\baritem{80}{Metor}{0}{0}{70}
-			\baritem{80}{MongoDB}{0}{0}{30}
-			\baritem{50}{HTML/CSS}{0}{0}{50}
-			\baritem{50}{LaTex}{0}{0}{60}
+			\baritem{50}{Linear Algebra}{0}{0}{65}
+			\baritem{80}{Deep Learning}{100}{0}{0}
+			\baritem{80}{Algorithm}{0}{0}{70}
+			\baritem{80}{LaTex}{0}{0}{30}
+			\baritem{50}{Data Structure}{0}{0}{50}
+			\baritem{50}{Git}{0}{0}{60}
+			\baritem{65}{QT}{0}{0}{70}
 		\end{barchart}
 		\hspace{10pt}
 
 		% TEXTBOX
-		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Meteor and react.\\Formerly I worked with Java and XPages.}}
+		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop deep learning model for various application. By the way, algorithm is one of my favorate course in college. Thanks to Advanced Algorithm course, I've practiced developing GUI with QT.}}
 	}
 	\begin{center}
 	\begin{tikzpicture}
 		\draw[draw=sectcol,dashed, opacity=0.5] (4,0) -- (-4,0);
 	\end{tikzpicture}
 	\end{center}
-	\begin{center}
-	\mbox{
-		\parbox[b][2cm][c]{3cm}{
-			\textcolor{textcol}{I am using Git and Webwstorm regularly for my dev projects.}
-		}\hspace{12pt}
-		\bubbles{6/Webstorm, 5/Git, 5/Sourcetree, 4/Office, 3/Inkscape}{\cvsection{Technologies}}		
-	}
-	\end{center}
 %---------------------------------------------------------------------------------------
-%	ACTIVITIES
+%	Courses
 %----------------------------------------------------------------------------------------
-	\cvsect{Actvities}{0.49}{thirdcol}{textcol}\\[20pt]
+	\cvsect{High Score Courses}{0.49}{thirdcol}{textcol}\\[20pt]
 	\mbox{
 		
 		% FACT BUBBLE
 		\parbox[b][3cm][c]{3cm}{
-			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{7}}}\\\large{\textcolor{sectcol}{\textbf{years}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{of participation at}\\
-			\textcolor{textcol}{\textbf{Global Game Jam}}
+			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{8}}}\\\large{\textcolor{sectcol}{\textbf{Course}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
+			\textcolor{textcol}{of important courses}\\
+			\textcolor{textcol}{\textbf{Got A+}}
 		}
 
 		% TEXT BOX
 		\parbox[b][3cm][c]{4cm}{
-			\textcolor{textcol}{In my freetime I read lots of news and help others on Stackoverflow. Due to bodyweight training I can keep my body and mind in balance.}
+			\textcolor{textcol}{I make my best endovers one or two courses every semester, just in case I can learn from them in a solid manner.  In the end of college, I am 18 out of 51 in the class. I especially learn more than other  classmates in those courses.}
 		}
 
 		% SQUARE BARS
-		\squares{20/Game Dev,20/Fitness,30/News,20/Stackoverflow}{1}
+		\squares{20/Unix Proramming,20/Fuzzy Theory,20/Compiler,30/Big Data, 30/Algorithm, 30/Machine Learning}{1}
 	}
 \end{minipage}
 \begin{minipage}{0.05\textwidth}
@@ -478,48 +472,25 @@
 \begin{center}
 
 % TIMELINE
-\begin{cvtimeline}{2009}{2018}{20}{\linewidth}
+\begin{cvtimeline}{2016}{2021}{15}{\linewidth}
 
-\cvevent{1/2009}{11/2011}{Bachelor Studies}{Uni Bremen}
-    {Master Thesis: Semi Automated Scoring in Technology Based Assessment}{thirdcol}{0}
+\cvevent{6/2016}{6/2016}{Gradurate from TCFSH}{}{}{thirdcol}{0}
 
-\cvevent{5/2009}{1/2010}{Semester Abroad}{University of Melbourne}
-    {Mastered six months of study and trans-cultural experience in Melbourne, Australia}{maincol}{1}
+\cvevent{12/2016}{12/2016}{Coordinator of freshman camp}{}{text a}{maincol}{1}
+\cvevent{6/2017}{6/2017}{Director of CSE SA}{}{text a}{maincol}{1}
 
-\cvevent{6/2010}{11/2011}{Student Assistant}{Uni Bremen}
-    {Realized an online diagnosis platform for workforce literacy development (Flex)}{maincol}{1}
+\cvevent{10/2018}{10/2018}{TMUxMIT Hackathon}{}{}{secondcol}{0}
 
-\cvevent{9/2011}{9/2011}{PM Simulation}{Getoq Consulting}
-    {Performed a two-day project simulation from management perspective}{secondcol}{2}
+\cvevent{6/2019}{6/2019}{First Project- YOLOv3: Aborted}{}{text a}{maincol}{1}
 
-\cvevent{11/2011}{7/2015}{Master Studies Digital Media}{University of Bremen}
-    {Inter-cultural classes in English, covering special topics in computer science and design}
-    {thirdcol}{0}
+\cvevent{10/2019}{10/2019}{TMU datathon}{}{text a}{secondcol}{1}
+\cvevent{12/2019}{12/2019}{Second Project: 2nd Place}{}{text a}{maincol}{1}
 
-\cvevent{1/2012}{11/2014}{Scientific Employee}{Uni of Bremen}
-    {Invented a flexible assessment framework, targeting industrial trainees}{maincol}{1}
 
-\cvevent{11/2012}{11/2013}{Master Project - PrIMA}{University of Bremen}
-    {Co-Invented a touch table application for medical support, co-developed software (Java) }
-    {thirdcol}{2}
-
-\cvevent{9/2013}{9/2013}{Poster Presentation}{DELFI Conference}
-    {Co-published poster with paper on usability guidelines for tests with functional illiterates}
-    {secondcol}{2}
-
-\cvevent{11/2014}{9/2016}{IT Consultant}{We4IT GmbH Bremen}
-    {Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}
-    {maincol}{1}
-
-\cvevent{7/2015}{7/2015}{M.Sc. Graduation}{University of Bremen}
-    {Master Thesis: Semi Automated Scoring in Technology Based Assessment}{thirdcol}{0}
-
-\cvevent{5/2016}{5/2016}{Startup Weekend}{Uni Bremen}
-    {Performed a two-day project simulation from management perspective}{secondcol}{0}
-
-\cvevent{9/2016}{12/2016}{Software Engineer}{University of Bremen}
-    {text a}{maincol}{1}
+\cvevent{6/2020}{6/2020}{Gradurate from NSYSU}{}{}{thirdcol}{0}
         
+
+
 \end{cvtimeline}
 \end{center}
 \end{minipage}
